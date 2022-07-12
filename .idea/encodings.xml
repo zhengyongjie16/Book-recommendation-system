@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/Min-Vue-master-master/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Min-Vue-master-master/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/hadoop-boot-admin/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/zheng-vue-master-master/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/zheng-vue-master-master/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/zheng-vue-master-master/zheng-admin/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/zheng-vue-master-master/zheng-admin/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/zheng-vue-master-master/zheng-common/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/zheng-vue-master-master/zheng-common/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/zheng-vue-master-master/zheng-framework/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/zheng-vue-master-master/zheng-framework/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/zheng-vue-master-master/zheng-generator/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/zheng-vue-master-master/zheng-generator/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/zheng-vue-master-master/zheng-quartz/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/zheng-vue-master-master/zheng-quartz/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/zheng-vue-master-master/zheng-system/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/zheng-vue-master-master/zheng-system/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/zheng-vue-master-master/zheng-tvrecommend/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/zheng-vue-master-master/zheng-tvrecommend/src/main/resources" charset="UTF-8" />
+  </component>
+</project>

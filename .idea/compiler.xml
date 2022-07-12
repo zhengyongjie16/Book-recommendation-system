@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="ruoyi-system" />
+        <module name="min-tvrecommend" />
+        <module name="ruoyi-generator" />
+        <module name="zheng-framework" />
+        <module name="zheng-tvrecommend" />
+        <module name="zheng-common" />
+        <module name="zheng-system" />
+        <module name="hadoop-boot-admin" />
+        <module name="zheng-generator" />
+        <module name="zheng-quartz" />
+        <module name="ruoyi-framework" />
+        <module name="zheng-hadoop-template" />
+        <module name="zheng-admin" />
+        <module name="ruoyi-quartz" />
+        <module name="ruoyi-admin" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="hadoop-recommend" target="8" />
+      <module name="hadoop-template-web" target="1.8" />
+      <module name="spring-boot-04-web-restfulcrud" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="hadoop-boot-admin" options="-parameters" />
+      <module name="hadoop-template-web" options="" />
+    </option>
+  </component>
+</project>

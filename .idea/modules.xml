@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Min-Vue-master-master/ruoyi-admin/zheng-admin.iml" filepath="$PROJECT_DIR$/Min-Vue-master-master/ruoyi-admin/zheng-admin.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Min-Vue-master-master/ruoyi-framework/zheng-framework.iml" filepath="$PROJECT_DIR$/Min-Vue-master-master/ruoyi-framework/zheng-framework.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Min-Vue-master-master/ruoyi-generator/zheng-generator.iml" filepath="$PROJECT_DIR$/Min-Vue-master-master/ruoyi-generator/zheng-generator.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Min-Vue-master-master/ruoyi-quartz/zheng-quartz.iml" filepath="$PROJECT_DIR$/Min-Vue-master-master/ruoyi-quartz/zheng-quartz.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Min-Vue-master-master/ruoyi-system/zheng-system.iml" filepath="$PROJECT_DIR$/Min-Vue-master-master/ruoyi-system/zheng-system.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Min-Vue-master-master/min-tvrecommend/zheng-tvrecommend.iml" filepath="$PROJECT_DIR$/Min-Vue-master-master/min-tvrecommend/zheng-tvrecommend.iml" />
+    </modules>
+  </component>
+</project>

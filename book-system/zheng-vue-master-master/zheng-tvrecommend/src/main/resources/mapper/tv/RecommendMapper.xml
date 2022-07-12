@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ruoyi.book.mapper.FunctionMapper">
+
+
+    <!--    娣诲姞涔︾睄-->
+    <insert id="savedBook" parameterType="com.ruoyi.book.domain.AddBook">
+        INSERT INTO book_recommend.add_book
+        (
+        `id`,
+        <if test="title != null">      `title`,  </if>
+        <if test="images != null">     `images`,  </if>
+        <if test="titleUrl != null">      `title_url`,  </if>
+        data
+        )
+        VALUES (
+        #{id},
+        <if test="title != null">        #{title}, </if>
+        <if test="images != null">      concat('images/subject/',#{images}) , </if>
+        <if test="titleUrl != null">    #{titleUrl}, </if>
+        now()
+        );
+
+    </insert>
+
+    <insert id="saveScore" parameterType="com.ruoyi.book.domain.VO.SaveScore">
+        INSERT INTO
+        `book_recommend`.`user_score`
+        (
+        `book_id`,
+        `user_id`,
+        `data`,
+        `score`
+        )
+        VALUES (
+        #{bookId},
+        #{userId},
+        now(),
+        #{score}
+
+        )
+
+
+
+
+    </insert>
+    <insert id="addNewBook" parameterType="com.ruoyi.book.domain.NewBook">
+
+        INSERT INTO `book_recommend`.`add_book`(
+        `id`,
+        <if test="title != null">      `title`,     </if>
+        <if test="titleUrl != null">   `title_url`, </if>
+        <if test="name != null">        `name`, </if>
+        <if test="images != null">      `images`, </if>
+        <if test="message != null">     `message`, </if>
+        <if test="score != null">     `score`, </if>
+        `favorite`
+        )
+        VALUES
+        (
+        #{id},
+        <if test="title != null">      #{title},     </if>
+        <if test="titleUrl != null">   #{titleUrl},</if>
+
+        <if test="name != null">        #{name},</if>
+        <if test="images != null">    #{images},</if>
+        <if test="message != null">  #{message},</if>
+        <if test="score != null">  #{score},</if>
+        0
+        )
+
+
+    </insert>
+    <update id="saveCollect" parameterType="com.ruoyi.book.domain.NewBook">
+
+
+        UPDATE `book_recommend`.`add_book` SET `favorite` = #{favorite} WHERE `id` = #{id};
+
+    </update>
+    <update id="upUserId">
+
+        UPDATE `book_recommend`.`up_id` SET `user_id` = #{userId} WHERE `id` = 1;
+
+    </update>
+
+<!--    删除书籍-->
+    <delete id="deleteBook" parameterType="java.lang.Integer">
+
+        UPDATE `book_recommend`.`add_book` SET  `del` =1   WHERE `id` = #{id};
+
+    </delete>
+
+
+    <select id="getListRecommend" resultType="com.ruoyi.book.domain.Book">
+        SELECT
+        book.book_id AS bookId,
+        re.score,
+        book.title,
+        book.title_url  AS titleUrl,
+        book.images
+        FROM book_recommend.book_data book
+        INNER JOIN book_recommend.recommend_results re
+        ON  book.book_id = re.book_id
+    </select>
+
+
+    <select id="getListBookName" resultType="com.ruoyi.book.domain.NewBook" >
+
+
+        SELECT
+        id,
+        title,
+        title_url AS titleUrl ,
+        name,
+        images,
+        message,
+        favorite
+        FROM book_recommend.add_book
+        where  title like concat("%",#{title},"%")  and  del = 0
+    </select>
+
+
+    <select id="ListNewBookRecommend" resultType="com.ruoyi.book.domain.NewBook">
+        select  * from book_recommend.add_book  where del =0
+
+    </select>
+    <select id="getListNweBook" resultType="com.ruoyi.book.domain.NewBook">
+        select
+        id,
+        title,
+        title_url AS titleUrl ,
+        name,
+        images,
+        message,
+        favorite
+
+        from  book_recommend.add_book where del =0
+        <if test="favorite != null">    where favorite =#{favorite} </if>
+
+
+
+    </select>
+    <select id="getUserId" resultType="java.lang.Long">
+
+        SELECT user_id FROM   book_recommend.`up_id`  where id = 1
+    </select>
+    <select id="getAdminBook" resultType="com.ruoyi.book.domain.NewBook">
+
+        SELECT * from  book_recommend.add_book where del = 0
+
+    </select>
+</mapper>
