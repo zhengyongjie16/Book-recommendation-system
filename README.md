@@ -1,11 +1,11 @@
-# Book-recommendation-system
+# Hadoop-Book-recommendation-system
 
 #### 介绍
-基于hadoop图书推荐系统
+基于Hadoop图书推荐系统
 
 #### 软件架构
 软件架构
-hadoop  springboot
+Hadoop框架  SpringBoot框架  vue框架
 
 大数据代码分析
 
@@ -67,5 +67,4 @@ http://localhost:8080/api/NewBookRecommend
 "favorite": 0,
 "score": null
 }
-
 
